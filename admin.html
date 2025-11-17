@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Panel Administrador IPTV</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h1>Panel Administrador IPTV</h1>
+
+<h3>➕ Agregar nueva lista M3U</h3>
+<input id="adminCode" placeholder="Código (ej: 1001)">
+<input id="adminUrl" placeholder="URL de la lista .m3u o .m3u8">
+<button onclick="addList()">Agregar Lista</button>
+
+<h3>➕ Agregar canal directo</h3>
+<input id="channelCode" placeholder="Código (ej: 1001)">
+<input id="channelName" placeholder="Nombre del canal">
+<input id="channelUrl" placeholder="URL del canal (.m3u8)">
+<button onclick="addChannel()">Agregar Canal</button>
+
+<h3>📄 Listas actuales</h3>
+<pre id="listPreview"></pre>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

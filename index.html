@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>IPTV Player</title>
+
+  <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.min.js"></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h1>IPTV Web Player</h1>
+<p>Ingresa tu código IPTV</p>
+
+<input id="iptvCode" placeholder="Código IPTV">
+<button onclick="loadList()">Cargar Lista</button>
+
+<hr>
+
+<div id="channelsContainer"></div>
+
+<script src="js/security.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
