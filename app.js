@@ -1,5 +1,5 @@
 async function loadList() {
-  const code = document.getElementById("iptvCode").value;
+  const code = document.getElementById("1121").value;
   const lists = JSON.parse(localStorage.getItem("iptvLists") || "{}");
 
   if (!lists[code]) {
@@ -38,3 +38,4 @@ async function loadList() {
     }
   });
 }
+
